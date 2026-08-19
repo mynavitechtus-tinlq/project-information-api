@@ -1,0 +1,43 @@
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Environments
+.env
+.env.stage
+.env.prod
+.env.dev
+.env.qa
+.venv
+env/
+venv/
+ENV/
+
+**/__pycache__
+
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+### VisualStudioCode Patch ###
+
+.terraform
+.terraform.*
+terraform.*
+.DS_Store

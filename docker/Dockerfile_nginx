@@ -1,0 +1,9 @@
+FROM nginx
+
+# Install logrotate
+RUN apt-get update && apt-get -y install logrotate tzdata && apt-get clean
+
+COPY ./nginx/nginx.conf.template ./nginx/run_nginx.sh /tmp/
+COPY ./nginx/config/mime.types /etc/nginx/mime.types
+
+RUN ["chmod", "+x", "/tmp/run_nginx.sh"]
